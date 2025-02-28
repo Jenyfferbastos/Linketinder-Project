@@ -1,0 +1,52 @@
+[
+    {
+        "nome": "Jenyffer Souza",
+        "email": "jenyffer.souza@gmail.com",
+        "cpf": "123.456.789-00",
+        "idade": 21,
+        "estado": "Bahia",
+        "cep": "40020-010",
+        "descricao": "Estudante de TI em busca de oportunidades na área de desenvolvimento web.",
+        "competencias": ["JavaScript", "Angular"]
+    },
+    {
+        "nome": "João Pereira",
+        "email": "joao.pereira@email.com",
+        "cpf": "987.654.321-00",
+        "idade": 30,
+        "estado": "Rio de Janeiro",
+        "cep": "22031-072",
+        "descricao": "Engenheiro de software especializado em back-end com Java.",
+        "competencias": ["Java", "Spring Framework", "PostgreSQL"]
+    },
+    {
+        "nome": "Ana Martins",
+        "email": "ana.martins@mail.com",
+        "cpf": "741.852.963-00",
+        "idade": 50,
+        "estado": "Pará",
+        "cep": "66033-000",
+        "descricao": "Analista de sistemas com ampla experiência em banco de dados e segurança da informação.",
+        "competencias": ["SQL", "Segurança da Informação"]
+    },
+    {
+        "nome": "Carlos Henrique",
+        "email": "carlos.henrique@email.com",
+        "cpf": "159.357.258-99",
+        "idade": 27,
+        "estado": "São Paulo",
+        "cep": "01046-000",
+        "descricao": "Desenvolvedor fullstack com experiência em aplicações escaláveis.",
+        "competencias": ["JavaScript", "Angular", "Node.js"]
+    },
+    {
+        "nome": "Mariana Oliveira",
+        "email": "mariana.oliveira@email.com",
+        "cpf": "852.963.741-88",
+        "idade": 35,
+        "estado": "Minas Gerais",
+        "cep": "30190-130",
+        "descricao": "Especialista em banco de dados e otimização de queries.",
+        "competencias": ["PostgreSQL", "MongoDB", "Python"]
+    }
+]
