@@ -45,7 +45,7 @@ Linketinder é uma aplicação que conecta candidatos e empresas anonimamente, p
    groovy -cp "lib/*:src" src/test/groovy/CandidatoSpec.groovy
    ```
    ```sh
-   groovy -cp "lib/*:src" src/test/groovy/EmpresaoSpec.groovy
+   groovy -cp "lib/*:src" src/test/groovy/EmpresaSpec.groovy
    ```
 ### 📌 Via IntelliJ IDEA
 1. Clique com o botão direito na classe de teste (`CandidatoSpec`) e selecione **Run 'CandidatoSpec'**. Repita o mesmo processo com a classe de teste EmpresaSpec.
