@@ -15,8 +15,7 @@ Linketinder é uma aplicação que conecta candidatos e empresas anonimamente, p
 - **Groovy**
 - **JSON para persistência de dados**
 - **Paradigma Orientado a Objetos**
-
-
+- **Spock**
 
 ## 📌 Como Executar o Projeto
 
@@ -34,9 +33,21 @@ Linketinder é uma aplicação que conecta candidatos e empresas anonimamente, p
    groovy src/main.groovy
    ```
 
+## ✅ Como Rodar os Testes
 
+### 📌 Via Terminal
+1. Navegue até a pasta do projeto:
+   ```sh
+   cd linketinder
+   ```
+2. Execute os testes com o seguinte comando:
+   ```sh
+   groovy -cp "lib/*:src" src/test/groovy/CandidatoSpec.groovy
+   ```
+   ```sh
+   groovy -cp "lib/*:src" src/test/groovy/EmpresaoSpec.groovy
+   ```
+### 📌 Via IntelliJ IDEA
+1. Clique com o botão direito na classe de teste (`CandidatoSpec`) e selecione **Run 'CandidatoSpec'**. Repita o mesmo processo com a classe de teste EmpresaSpec.
 
----
-
-Desenvolvido com por Jenyffer Sacramento.
-
+Desenvolvido por Jenyffer Sacramento.
