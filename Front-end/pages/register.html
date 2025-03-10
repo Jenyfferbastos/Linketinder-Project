@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Linketinder</title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <script src="../scripts/register.js" defer></script>
+</head>
+<body>
+<div class="container-register">
+    <h2 id="form-title">Cadastro</h2>
+    <form id="register-form">
+        <div class="input-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="input-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group" id="cpf-cnpj-group">
+            <label for="documento" id="cpf-cnpj-label">CPF:</label>
+            <input type="text" id="documento" name="documento" required>
+        </div>
+        <div class="input-group" id="idade-group">
+            <label for="idade-pais" id="idade-pais-label">Idade:</label>
+            <input type="number" id="idade-pais" name="idade-pais">
+        </div>
+        <div class="input-group" id="pais-group" style="display: none;">
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais">
+        </div>
+        <div class="input-group">
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+        </div>
+        <div class="input-group">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" pattern="[0-9]{5}-?[0-9]{3}" maxlength="9" required placeholder="00000-000">
+        </div>
+        <div class="input-group">
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" required></textarea>
+        </div>
+        <div class="input-group">
+            <label for="competencias">Competências (separadas por vírgula):</label>
+            <textarea id="competencias" name="competencias" required placeholder="Ex: JavaScript, TypeScript, Angular"></textarea>
+        </div>
+        <button type="submit" class="btn-register">Cadastrar</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Candidato</title>
+    <link rel="stylesheet" href="../styles/stylespofiles.css">
+    <script src="../scripts/candidate.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <!-- MENU LATERAL -->
+    <aside class="sidebar">
+        <h2>Linketinder</h2>
+        <nav class="menu">
+            <button type="submit" onclick="showSection('perfil')">Perfil</button>
+            <button type="submit" onclick="showSection('minhas-vagas')">Minhas Vagas</button>
+            <button type="submit" onclick="showSection('buscar-vagas')">Buscar Vagas</button>
+            <button onclick="logout()">Sair</button>
+        </nav>
+    </aside>
+
+    <!-- ÁREA DE VISUALIZAÇÃO -->
+    <main class="content">
+        <!-- Seção Perfil -->
+        <section id="perfil" class="section active">
+            <h1>Perfil do Candidato</h1>
+            <div class="profile-info">
+                <p><strong>Nome:</strong> <span id="nome"></span></p>
+                <p><strong>Descrição:</strong> <span id="descricao"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>CPF:</strong> <span id="cpf"></span></p>
+                <p><strong>Idade:</strong> <span id="idade"></span></p>
+                <p><strong>País:</strong> <span id="pais"></span></p>
+                <p><strong>Estado:</strong> <span id="estado"></span></p>
+                <p><strong>CEP:</strong> <span id="cep"></span></p>
+                <p><strong>Competências:</strong> <span id="competencias"></span></p>
+            </div>
+        </section>
+
+        <!-- Seção Minhas Vagas -->
+        <section id="minhas-vagas" class="section hidden">
+            <h1>Minhas Vagas</h1>
+            <div class="job-list">
+                <ul id="lista-minhas-vagas"></ul>
+            </div>
+        </section>
+
+        <!-- Seção Buscar Vagas -->
+        <section id="buscar-vagas" class="section hidden">
+            <h1>Buscar Vagas</h1>
+            <div class="job-list">
+                <ul id="lista-vagas"></ul>
+            </div>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

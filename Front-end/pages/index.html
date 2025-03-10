@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Linketinder</title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../scripts/login.js" defer></script>
+    <script src="../scripts/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+    <!-- Painel Azul -->
+    <div class="left-panel">
+        Linketinder
+    </div>
+
+    <!-- Painel de Login -->
+    <div class="right-panel">
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('candidato')">Candidato</button>
+            <button class="tab" onclick="switchTab('empresa')">Empresa</button>
+        </div>
+
+        <!-- Formulário de Login - Candidato -->
+        <form id="login-candidato" class="login-form active">
+            <h2>Login Candidato</h2>
+            <div class="input-group">
+                <input type="email" id="email-candidato" name="email" placeholder="E-mail" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password-candidato" name="password" placeholder="Senha" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility('password-candidato', this)">
+            <i class="fa-solid fa-eye"></i>
+        </span>
+            </div>
+            <button type="button" class="btn-login" id="btn-login-candidato" onclick="handleLogin('candidato')">Entrar</button>
+            <p><a href="register.html?tipo=candidato">Cadastrar-se como Candidato</a></p>
+        </form>
+
+
+        <!-- Formulário de Login - Empresa -->
+        <form id="login-empresa" class="login-form">
+            <h2>Login Empresa</h2>
+            <div class="input-group">
+                <input type="email" id="email-empresa" name="email" placeholder="E-mail Corporativo" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password-empresa" name="password" placeholder="Senha" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility('password-empresa', this)">
+            <i class="fa-solid fa-eye"></i>
+        </span>
+            </div>
+            <button type="button" class="btn-login" id="btn-login-empresa" onclick="handleLogin('empresa')">Entrar</button>
+            <p><a href="register.html?tipo=empresa">Cadastrar-se como Empresa</a></p>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>

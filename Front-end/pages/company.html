@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil da Empresa</title>
+    <link rel="stylesheet" href="../styles/stylespofiles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../scripts/company.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <!-- Menu lateral -->
+    <aside class="sidebar">
+        <h2>Menu</h2>
+        <div class="menu">
+            <button onclick="showSectionn('profile')">Meu Perfil</button>
+            <button onclick="showSectionn('candidates')">Candidatos</button>
+            <button onclick="logoutC()">Sair</button>
+        </div>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="content">
+        <!-- Perfil da Empresa -->
+        <section id="profile">
+            <h1>Perfil da Empresa</h1>
+            <div class="profile-info">
+                <p><strong>Nome:</strong> <span id="nome"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>CNPJ:</strong> <span id="cnpj"></span></p>
+                <p><strong>País:</strong> <span id="pais"></span></p>
+                <p><strong>Estado:</strong> <span id="estado"></span></p>
+                <p><strong>CEP:</strong> <span id="cep"></span></p>
+                <p><strong>Descrição:</strong> <span id="descricao"></span></p>
+                <p><strong>Competências Desejadas:</strong> <span id="competencias"></span></p>
+            </div>
+        </section>
+
+        <!-- Lista de Candidatos Anônimos -->
+        <section id="candidates" class="hidden">
+            <h1>Candidatos Cadastrados</h1>
+            <div class="job-list">
+                <ul id="lista-candidatos"></ul>
+            </div>
+            <!-- Gráfico de Competências -->
+            <canvas id="competenciaChart" width="400" height="200"></canvas>
+        </section>
+    </main>
+</div>
+
+<!-- Tooltip -->
+<div id="tooltip" class="tooltip hidden"></div>
+
+<script>
+    // Chama a função para carregar o perfil assim que o DOM estiver carregado
+    document.addEventListener("DOMContentLoaded", () => {
+        carregarPerfilEmpresa();
+        carregarCandidatos(); // Carrega os candidatos também
+    });
+</script>
+
+</body>
+</html>
