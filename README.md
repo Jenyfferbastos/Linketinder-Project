@@ -9,8 +9,6 @@ Linketinder é uma aplicação que conecta candidatos e empresas anonimamente, p
 - Listagem de candidatos e empresas
 - Seleção de competências pré-definidas ou personalizadas
 - Interface de linha de comando interativa
-- - **Validação de dados** utilizando expressões regulares (**regex**) para garantir que informações como CPF, CNPJ, e-mails, telefones, entre outros, estejam no formato correto.
-
 
 ## 🛠 Tecnologias Utilizadas
 
