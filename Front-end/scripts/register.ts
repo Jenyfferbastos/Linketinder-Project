@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cadastroForm = document.getElementById("register-form") as HTMLFormElement | null;
 
     if (!formTitle || !cpfCnpjLabel || !idadePaisLabel || !idadePaisInput || !paisGroup || !idadeGroup || !cadastroForm) {
-        console.error("❌ Erro: Um ou mais elementos do formulário não foram encontrados!");
+        console.error(" Erro: Um ou mais elementos do formulário não foram encontrados!");
         return;
     }
 

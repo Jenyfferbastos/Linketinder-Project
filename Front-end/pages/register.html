@@ -21,11 +21,11 @@
         </div>
         <div class="input-group" id="cpf-cnpj-group">
             <label for="documento" id="cpf-cnpj-label">CPF:</label>
-            <input type="text" id="documento" name="documento" required>
+            <input type="text" id="documento" name="documento" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" placeholder="000.000.000-00">
         </div>
         <div class="input-group" id="idade-group">
             <label for="idade-pais" id="idade-pais-label">Idade:</label>
-            <input type="number" id="idade-pais" name="idade-pais">
+            <input type="number" id="idade-pais" name="idade-pais" min="18">
         </div>
         <div class="input-group" id="pais-group" style="display: none;">
             <label for="pais">País:</label>
@@ -37,7 +37,15 @@
         </div>
         <div class="input-group">
             <label for="cep">CEP:</label>
-            <input type="text" id="cep" name="cep" pattern="[0-9]{5}-?[0-9]{3}" maxlength="9" required placeholder="00000-000">
+            <input type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}" maxlength="9" placeholder="00000-000">
+        </div>
+        <div class="input-group">
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required pattern="\(\d{2}\)\s\d{5}-\d{4}" maxlength="15" placeholder="(00) 00000-0000">
+        </div>
+        <div class="input-group">
+            <label for="linkedin">Link do LinkedIn:</label>
+            <input type="url" id="linkedin" name="linkedin" pattern="https?://(www\.)?linkedin\.com/.*" placeholder="https://www.linkedin.com/in/seunome" required>
         </div>
         <div class="input-group">
             <label for="descricao">Descrição:</label>

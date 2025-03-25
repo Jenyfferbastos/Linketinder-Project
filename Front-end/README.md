@@ -10,6 +10,8 @@ O frontend do Linketinder possui as seguintes funcionalidades:
 
 1. **Cadastro de Candidatos**:
    - Permite que os candidatos se cadastrem no sistema informando nome, email, senha, competências e formação acadêmica.
+   - Validação de dados utilizando expressões regulares (**regex**) para garantir que informações como CPF, CNPJ, e-mails, telefones, entre outros, estejam no formato correto.
+
    
 2. **Cadastro de Empresas**:
    - Permite que as empresas se cadastrem com informações como nome, email, CNPJ, localização, descrição da empresa e competências desejadas.

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var idadeGroup = document.getElementById("idade-group");
     var cadastroForm = document.getElementById("register-form");
     if (!formTitle || !cpfCnpjLabel || !idadePaisLabel || !idadePaisInput || !paisGroup || !idadeGroup || !cadastroForm) {
-        console.error("❌ Erro: Um ou mais elementos do formulário não foram encontrados!");
+        console.error(" Erro: Um ou mais elementos do formulário não foram encontrados!");
         return;
     }
     if (tipo === "empresa") {
@@ -59,9 +59,9 @@ document.addEventListener("DOMContentLoaded", function () {
             tipo: tipo,
             nome: nome,
             email: email,
-            cpf: documento, // Alterado para 'cpf'
+            cpf: documento,
             idadePais: idadePais,
-            pais: idadePais, // Alterado para 'pais'
+            pais: idadePais,
             estado: estado,
             cep: cep,
             descricao: descricao,
