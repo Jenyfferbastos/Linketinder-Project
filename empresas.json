@@ -1,52 +1,85 @@
 [
-  {
-    "nome": "InovaTech Soluções",
-    "email": "contato@inovatech.com",
-    "cnpj": "12.345.678/0001-99",
-    "pais": "Brasil",
-    "estado": "São Paulo",
-    "cep": "04567-890",
-    "descricao": "Empresa especializada no desenvolvimento de software para o setor financeiro.",
-    "competencias": ["Java", "Spring Boot", "Microservices"]
-  },
-  {
-    "nome": "WebSoft Digital",
-    "email": "recrutamento@websoft.com",
-    "cnpj": "98.765.432/0001-22",
-    "pais": "Brasil",
-    "estado": "Rio de Janeiro",
-    "cep": "20040-020",
-    "descricao": "Líder no desenvolvimento de aplicações web e mobile.",
-    "competencias": ["React", "Node.js", "TypeScript"]
-  },
-  {
-    "nome": "DataCorp Analytics",
-    "email": "info@datacorp.com",
-    "cnpj": "11.223.344/0001-55",
-    "pais": "Brasil",
-    "estado": "Minas Gerais",
-    "cep": "30140-120",
-    "descricao": "Especializada em análise de dados e inteligência artificial.",
-    "competencias": ["Python", "Machine Learning", "Big Data"]
-  },
-  {
-    "nome": "CloudTech Solutions",
-    "email": "support@cloudtech.com",
-    "cnpj": "33.445.556/0001-77",
-    "pais": "Brasil",
-    "estado": "Santa Catarina",
-    "cep": "88036-100",
-    "descricao": "Soluções avançadas para computação em nuvem e DevOps.",
-    "competencias": ["AWS", "Kubernetes", "Docker"]
-  },
-  {
-    "nome": "Segurança Digital Ltda",
-    "email": "contato@segurancadigital.com",
-    "cnpj": "55.667.778/0001-99",
-    "pais": "Brasil",
-    "estado": "Pernambuco",
-    "cep": "50050-540",
-    "descricao": "Empresa especializada em segurança da informação e privacidade de dados.",
-    "competencias": ["Segurança da Informação", "Criptografia", "Pentest"]
-  }
+    {
+        "nome": "InovaTech Solu\u00e7\u00f5es",
+        "email": "contato@inovatech.com",
+        "cnpj": "12.345.678/0001-99",
+        "pais": "Brasil",
+        "estado": "S\u00e3o Paulo",
+        "cep": "04567-890",
+        "descricao": "Empresa especializada no desenvolvimento de software para o setor financeiro.",
+        "competencias": [
+            "Java",
+            "Spring Boot",
+            "Microservices"
+        ]
+    },
+    {
+        "nome": "WebSoft Digital",
+        "email": "recrutamento@websoft.com",
+        "cnpj": "98.765.432/0001-22",
+        "pais": "Brasil",
+        "estado": "Rio de Janeiro",
+        "cep": "20040-020",
+        "descricao": "L\u00edder no desenvolvimento de aplica\u00e7\u00f5es web e mobile.",
+        "competencias": [
+            "React",
+            "Node.js",
+            "TypeScript"
+        ]
+    },
+    {
+        "nome": "DataCorp Analytics",
+        "email": "info@datacorp.com",
+        "cnpj": "11.223.344/0001-55",
+        "pais": "Brasil",
+        "estado": "Minas Gerais",
+        "cep": "30140-120",
+        "descricao": "Especializada em an\u00e1lise de dados e intelig\u00eancia artificial.",
+        "competencias": [
+            "Python",
+            "Machine Learning",
+            "Big Data"
+        ]
+    },
+    {
+        "nome": "CloudTech Solutions",
+        "email": "support@cloudtech.com",
+        "cnpj": "33.445.556/0001-77",
+        "pais": "Brasil",
+        "estado": "Santa Catarina",
+        "cep": "88036-100",
+        "descricao": "Solu\u00e7\u00f5es avan\u00e7adas para computa\u00e7\u00e3o em nuvem e DevOps.",
+        "competencias": [
+            "AWS",
+            "Kubernetes",
+            "Docker"
+        ]
+    },
+    {
+        "nome": "Seguran\u00e7a Digital Ltda",
+        "email": "contato@segurancadigital.com",
+        "cnpj": "55.667.778/0001-99",
+        "pais": "Brasil",
+        "estado": "Pernambuco",
+        "cep": "50050-540",
+        "descricao": "Empresa especializada em seguran\u00e7a da informa\u00e7\u00e3o e privacidade de dados.",
+        "competencias": [
+            "Seguran\u00e7a da Informa\u00e7\u00e3o",
+            "Criptografia",
+            "Pentest"
+        ]
+    },
+    {
+        "nome": "Tech X",
+        "email": "techx@gmail.com",
+        "cnpj": "00000000000",
+        "pais": "Brasil",
+        "estado": "Bahia",
+        "cep": "00000-000",
+        "descricao": "Teste",
+        "competencias": [
+            "Java",
+            "Angular"
+        ]
+    }
 ]

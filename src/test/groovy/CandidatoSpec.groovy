@@ -1,5 +1,6 @@
+import models.Candidato
 import spock.lang.Specification
-import src.models.Candidato
+
 
 class CandidatoSpec extends Specification {
     def "Deve adicionar um candidato na lista"() {
