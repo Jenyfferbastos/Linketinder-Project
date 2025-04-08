@@ -13,12 +13,10 @@ repositories {
 dependencies {
     implementation 'org.codehaus.groovy:groovy-all:3.0.9'
     implementation 'org.postgresql:postgresql:42.5.0'
-    testImplementation 'org.spockframework:spock-core:2.1-groovy-3.0'
-    testRuntimeOnly 'net.bytebuddy:byte-buddy:1.12.20'
 }
 
 application {
-    mainClass.set('Main')
+    mainClass = 'ui.Main'
 }
 
 sourceSets {
@@ -27,13 +25,4 @@ sourceSets {
             srcDirs = ['src/main/groovy']
         }
     }
-    test {
-        groovy {
-            srcDirs = ['src/test/groovy']
-        }
-    }
-}
-
-tasks.withType(Test).configureEach {
-    useJUnitPlatform()
 }

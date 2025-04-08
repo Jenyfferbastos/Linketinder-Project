@@ -1,17 +1,20 @@
 package repository
 
-import groovy.sql.Sql
-import groovy.util.ConfigSlurper
+import java.sql.Connection
+import java.sql.DriverManager
 
 class DatabaseConnection {
-    static Sql getConnection() {
-        def config = new ConfigSlurper().parse(new File("src/main/resources/application.properties").toURL())
-        def url = config.db.url
-        def username = config.db.username
-        def password = config.db.password
-        def driver = "org.postgresql.Driver"
+    static String url = "jdbc:postgresql://localhost:5432/linketinder_db"
+    static String usuario = "admin"
+    static String senha = "admin123"
 
-        def sql = Sql.newInstance(url, username, password, driver)
-        return sql
+    static Connection conectar() {
+        try {
+            Class.forName("org.postgresql.Driver")
+            return DriverManager.getConnection(url, usuario, senha)
+        } catch (Exception e) {
+            e.printStackTrace()
+            return null
+        }
     }
 }

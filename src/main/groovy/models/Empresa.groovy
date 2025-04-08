@@ -1,39 +1,17 @@
 package models
 
-import models.PessoaBase
-
-class Empresa extends PessoaBase {
+class Empresa {
+    int id
+    String nome
     String cnpj
+    String email
+    String descricao
     String pais
-    List<String> competencias
-
-    static final List<String> COMPETENCIAS_DISPONIVEIS = [
-            "Java", "Python", "Spring Framework", "Angular", "React", "Node.js"
-    ]
-
-    Empresa(String nome, String email, String cnpj, String pais, String estado, String cep, String descricao, List<String> competencias) {
-        super(nome, email, estado, cep, descricao)
-        this.cnpj = cnpj
-        this.pais = pais
-        this.competencias = competencias ?: []
-    }
+    String cep
+    String senha
 
     @Override
     String toString() {
-        return """
-        🏢 Empresa: ${nome}
-        ✉ Email: ${email}
-        🏛️ CNPJ: ${cnpj}
-        🌍 País: ${pais}
-        📍 Estado: ${estado}
-        📮 CEP: ${cep}
-        📝 Descrição: ${descricao}
-        🎯 Competências desejadas: ${competencias.join(', ')}
-        -------------------------------
-        """.stripIndent()
-    }
-
-    static List<String> escolherCompetencias() {
-        return COMPETENCIAS_DISPONIVEIS
+        return "Empresa(id=$id, nome=$nome, CNPJ=$cnpj, email=$email, país=$pais, CEP=$cep, descrição=$descricao)"
     }
 }

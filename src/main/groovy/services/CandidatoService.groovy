@@ -4,11 +4,20 @@ import models.Candidato
 import repository.CandidatoRepository
 
 class CandidatoService {
-    static List<Candidato> listarCandidatos() {
-        return CandidatoRepository.listarCandidatos()
+
+    static void criarCandidato(Candidato candidato) {
+        CandidatoRepository.salvar(candidato)
     }
 
-    static void cadastrarCandidato(Candidato candidato) {
-        CandidatoRepository.salvarCandidato(candidato)
+    static List<Candidato> listarCandidatos() {
+        return CandidatoRepository.listar()
+    }
+
+    static void atualizarCandidato(Candidato candidato) {
+        CandidatoRepository.atualizar(candidato)
+    }
+
+    static void deletarCandidato(int id) {
+        CandidatoRepository.deletar(id)
     }
 }
